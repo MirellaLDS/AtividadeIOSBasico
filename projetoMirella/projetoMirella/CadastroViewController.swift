@@ -24,6 +24,10 @@ class CadastroViewController: UIViewController {
         
         Database.instance().insert(add: usuario)
         
+        let itens = Database.instance().list()
+        print("count \(itens)")
+        
+        self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     

@@ -15,6 +15,7 @@
 		570A502421ED470A00498D12 /* UserListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A502321ED470A00498D12 /* UserListTableController.swift */; };
 		570A502621ED475800498D12 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A502521ED475800498D12 /* Usuario.swift */; };
 		570A502A21ED4B8200498D12 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A502921ED4B8200498D12 /* MyTableViewCell.swift */; };
+		5714B76121EFF8FC00C5BF6A /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714B76021EFF8FC00C5BF6A /* DetalheViewController.swift */; };
 		57BD431221EE9AC8007CBC21 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD431121EE9AC8007CBC21 /* Database.swift */; };
 		57BD431421EE9DF5007CBC21 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD431321EE9DF5007CBC21 /* CadastroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		570A502321ED470A00498D12 /* UserListTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableController.swift; sourceTree = "<group>"; };
 		570A502521ED475800498D12 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		570A502921ED4B8200498D12 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		5714B76021EFF8FC00C5BF6A /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
 		57BD431121EE9AC8007CBC21 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		57BD431321EE9DF5007CBC21 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				570A501121ED34A700498D12 /* AppDelegate.swift */,
 				570A501321ED34A700498D12 /* ViewController.swift */,
 				570A502321ED470A00498D12 /* UserListTableController.swift */,
+				5714B76021EFF8FC00C5BF6A /* DetalheViewController.swift */,
 				570A502921ED4B8200498D12 /* MyTableViewCell.swift */,
 				57BD431321EE9DF5007CBC21 /* CadastroViewController.swift */,
 				570A502521ED475800498D12 /* Usuario.swift */,
@@ -154,6 +157,7 @@
 				570A502621ED475800498D12 /* Usuario.swift in Sources */,
 				570A501421ED34A700498D12 /* ViewController.swift in Sources */,
 				570A502421ED470A00498D12 /* UserListTableController.swift in Sources */,
+				5714B76121EFF8FC00C5BF6A /* DetalheViewController.swift in Sources */,
 				570A502A21ED4B8200498D12 /* MyTableViewCell.swift in Sources */,
 				57BD431421EE9DF5007CBC21 /* CadastroViewController.swift in Sources */,
 				570A501221ED34A700498D12 /* AppDelegate.swift in Sources */,

@@ -19,7 +19,15 @@ class UserListTableController: UITableViewController {
         
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        usuarios = Database.instance().list()
+        print("count \(usuarios.count)")
+        
+        self.tableView.reloadData()
+        
+        
+    }
     
 //    func createUsuarios() -> [Usuario] {
 //        var tempUsuarios: [Usuario] = []
@@ -48,7 +56,7 @@ class UserListTableController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellItem", for: indexPath) as! MyTableViewCell
-
+        
         let nome = usuarios[indexPath.row].nome
         cell.labelTarefa?.text = nome
         
@@ -75,15 +83,14 @@ class UserListTableController: UITableViewController {
                 alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
                 alert.addAction(UIAlertAction(title: "Apagar", style: .destructive, handler: { (alert) in
                     Database.instance().delete(add: indexPath.row)
-                    tableView.deleteRows(at: [indexPath], with: .fade)
+//                    tableView.deleteRows([indexPath], withRowAnimation: .fade)
+                    self.usuarios = Database.instance().list()
+                    self.tableView.reloadData()
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
             }
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-            
-        }    
+        } 
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -93,7 +100,13 @@ class UserListTableController: UITableViewController {
         }
         return false
     }
- 
+    var indexRow = 0
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Item select: \(indexPath.row)")
+        Database.instance().setControl(value: indexPath.row)
+        self.performSegue(withIdentifier: "abrirdetalhe", sender: self)
+        
+    }
 
     /*
     // Override to support rearranging the table view.
